@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            <div>
+                <div class="fecha">
+                    {{fecha | date: 'dd/MM/yyyy'}}         
+                </div>
+                <div class="hora">
+                    {{fecha | date: 'shortTime'}}
+                </div>
+            </div>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-img [src]="photoUri"></ion-img>
+</ion-content>
+
